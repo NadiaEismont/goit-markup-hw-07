@@ -82,7 +82,6 @@ footer {
   color: var(--titles-text);
   letter-spacing: 0.03em;
   margin: auto 0;
-  margin-right: 93px;
 }
 .logo__accent {
   --logo-accent: #2196f3;
@@ -99,6 +98,7 @@ footer {
   display: flex;
   align-items: center;
   margin-left: auto;
+  justify-content: space-between;
 }
 
 .nav__list,
@@ -109,6 +109,9 @@ footer {
   padding-left: 0;
   list-style: none;
   flex-wrap: wrap;
+}
+.nav__list {
+  margin-left: 93px;
 }
 
 .nav__list > .nav__header:not(:last-child) {
@@ -530,19 +533,19 @@ textarea:hover {
   fill: var(--white);
 }
 
-.join-flex:hover,
-.join-flex:focus {
+.join__item:hover,
+.join__item:focus {
   background-color: var(--accent-color);
   border-radius: 50%;
 }
 
-.icons-link-footer:focus {
+.join__link:focus {
   outline: none;
   background-color: var(--accent-color);
   border-radius: 50%;
 }
 
-.icons-link-footer:hover .icons-footer {
+.join__link:hover .join__icons {
   fill: var(--white);
 }
 
@@ -828,11 +831,10 @@ textarea:hover {
 /* footer */
 .footer {
   display: flex;
+  align-items: baseline;
+  justify-content: space-evenly;
 }
-.join__list {
-  margin-top: 20px;
-  justify-content: space-between;
-}
+
 /* .footer-part {
   background-color: var(--bg-hero-footer);
   padding: 60px 0;
@@ -855,7 +857,7 @@ textarea:hover {
   color: var(--white);
   margin-bottom: 9px;
   margin-top: 20px;
-  display: block;
+  display: inline-block;
 }
 .footer__link {
   font-style: normal;
@@ -873,11 +875,12 @@ textarea:hover {
 }
 
 .join {
+  display: flex;
   flex-direction: column;
   margin-left: auto;
-  
 }
-.join__title {
+.join__title,
+.subscribe-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -885,11 +888,13 @@ textarea:hover {
   text-transform: uppercase;
   color: var(--white);
 }
+
 .join__list {
   display: flex;
-  justify-content: center;
-  padding-top: 20px;
+  justify-content: space-between;
   align-items: center;
+  margin-top: 20px;
+  padding-top: 20px;
 }
 
 .join__item {
