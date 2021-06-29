@@ -44,10 +44,10 @@
 
 .form__field:focus-within {
   fill: var(--accent-color);
-}
-.form__field:hover .form__icon {
-  fill: var(--accent-color);
-  opacity: 1;
+  &:hover .form__icon {
+    fill: var(--accent-color);
+    opacity: 1;
+  }
 }
 
 /* .current:hover::after,

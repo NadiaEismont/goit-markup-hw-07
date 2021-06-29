@@ -21,28 +21,26 @@
     transition-property: fill, border;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    fill: var(--icon-color);
+    width: 20px;
+    height: 20px;
   }
 }
-.icons__svg {
-  fill: var(--icon-color);
-  width: 20px;
-  height: 20px;
-}
+
 .icons__item:hover {
   background-color: var(--accent-color);
   border-radius: 50%;
+  &:hover .icons__svg,
+  &:focus .icons__svg {
+    fill: var(--white);
+  }
 }
 .icons__link:focus {
   outline: none;
   fill: var(--white);
   background-color: var(--accent-color);
   border-radius: 50%;
-}
-
-.icons__link:focus .icons__svg {
-  fill: var(--white);
-}
-.icons__item:hover .icons__svg,
-.icons__item:focus .icons__svg {
-  fill: var(--white);
+  &:focus .icons__svg {
+    fill: var(--white);
+  }
 }
