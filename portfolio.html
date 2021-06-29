@@ -18,6 +18,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="/css/main.min.css" />
     <style>
       .colortext {
         color: #212121;
@@ -25,36 +26,33 @@
     </style>
   </head>
   <body>
-    <header>
-      <nav class="container main-nav">
-        <a href="" class="logo"><span class="web">Web</span>Studio</a>
-        <ul class="nav-list">
-          <li class="nav-list-header">
+     <header class="container">
+      <nav class="nav">
+        <a href="" class="logo"><span class="logo__accent">Web</span>Studio</a>
+        <ul class="nav__list">
+          <li class="nav__header">
             <a href="./index.html" class="link">Студия</a>
           </li>
-          <li class="nav-list-header">
-            <a href="" class="link current">Портфолио</a>
+          <li class="nav__header">
+            <a  class="link current">Портфолио</a>
           </li>
-          <li class="nav-list-header">
+          <li class="nav__header">
             <a href="#contacts" class="link">Контакты</a>
           </li>
         </ul>
-        <div class="profile-contacts">
-          <ul class="nav-list">
-            <li class="link-header-profile">
-              <a
-                href="meilto:info@devstudio.com"
-                class="link icons-contacts-flex"
-              >
-                <svg class="icons-contacts" width="16" height="12">
+        <div class="connection">
+          <ul class="connection__list">
+            <li class="connection__mail">
+              <a href="meilto:info@devstudio.com" class="link connection__link">
+                <svg class="connection__icons" width="16" height="12">
                   <use href="./icons/sprite.svg#icon-mail"></use>
                 </svg>
                 info@devstudio.com</a
               >
             </li>
-            <li class="link-header-profile">
-              <a href="tel:+380961111111" class="link icons-contacts-flex">
-                <svg class="icons-contacts" width="10" height="16">
+            <li class="connection__mail">
+              <a href="tel:+380961111111" class="link connection__link">
+                <svg class="connection__icons" width="10" height="16">
                   <use href="./icons/sprite.svg#icon-smartphone"></use>
                 </svg>
                 +38 096 111 11 11</a
@@ -68,26 +66,26 @@
       <section class="portfolio">
         <div class="container">
           <ul class="nav-portfolio">
-            <li class="nav-port-button">
+            <li class="nav-portfolio__list">
               <button class="button-port" type="button">Все</button>
             </li>
-            <li class="nav-port-button">
+            <li class="nav-portfolio__list">
               <button class="button-port" type="button">Веб-сайты</button>
             </li>
-            <li class="nav-port-button">
+            <li class="nav-portfolio__list">
               <button class="button-port" type="button">Приложения</button>
             </li>
-            <li class="nav-port-button">
+            <li class="nav-portfolio__list">
               <button class="button-port" type="button">Дизайн</button>
             </li>
-            <li class="nav-port-button">
+            <li class="nav-portfolio__list">
               <button class="button-port" type="button">Маркетинг</button>
             </li>
           </ul>
           <h1 class="hidden-title">Портфолио</h1>
-          <ul class="item">
-            <li class="experience">
-              <div class="experience-relative">
+          <ul class="experience">
+            <li class="experience__list">
+              <div class="experience__group">
                 <div class="overlay-prtfl">
                   <p>
                     Технокряк это современная площадка распространения
@@ -95,21 +93,21 @@
                     цифрового шпионажа и атак на защищённые сервера конкурентов.
                   </p>
                 </div
-                <a href="link-port"></a>
+                <a href=""></a>
                 <img
-                  class="image"
+                  class="experience__image"
                   src="./image-prtfl/1img.jpg"
                   alt="people"
                   width="370"
                 />
               </div>
-              <div class="experience-border">
+              <div class="description">
                 <h2>Технокряк</h2>
                 <p>Веб-сайт</p>
               </div>
             </li>
-            <li class="experience">
-              <div class="experience-relative">
+            <li class="experience__list">
+              <div class="experience__group">
                 <div class="overlay-prtfl">
                   <p>
                     Технокряк это современная площадка распространения
@@ -117,20 +115,20 @@
                     цифрового шпионажа и атак на защищённые сервера конкурентов.
                   </p>
                 </div
-              <a href="link-port"></a>
+              <a href=""></a>
               <img
-                class="image"
+                class="experience__image"
                 src="./image-prtfl/2img.jpg"
                 alt="basketball-player"
               />
                 </div>
-              <div class="experience-border">
+              <div class="description">
                 <h2>Постер New Orlean vs Golden Star</h2>
                 <p>Дизайн</p>
               </div>
             </li>
-            <li class="experience">
-                <div class="experience-relative">
+            <li class="experience__list">
+                <div class="experience__group">
                 <div class="overlay-prtfl">
                   <p>
                     Технокряк это современная площадка распространения
@@ -138,21 +136,21 @@
                     цифрового шпионажа и атак на защищённые сервера конкурентов.
                   </p>
                 </div
-              <a href="link-port"></a>
+              <a href=""></a>
               <img
-                class="image"
+                class="experience__image"
                 src="./image-prtfl/3img.jpg"
                 alt="logo-restaurant"
                 width="370"
               />
               </div>
-              <div class="experience-border">
+              <div class="description">
                 <h2>Ресторан Seafood</h2>
                 <p>Приложение</p>
               </div>
             </li>
-            <li class="experience">
-                <div class="experience-relative">
+            <li class="experience__list">
+                <div class="experience__group">
                 <div class="overlay-prtfl">
                   <p>
                     Технокряк это современная площадка распространения
@@ -160,21 +158,21 @@
                     цифрового шпионажа и атак на защищённые сервера конкурентов.
                   </p>
                 </div
-              <a href="link-port"></a>
+              <a href=""></a>
               <img
-                class="image"
+                class="experience__image"
                 src="./image-prtfl/4img.jpg"
                 alt="headphone"
                 width="370"
               />
               </div>
-              <div class="experience-border">
+              <div class="description">
                 <h2>Проект Prime</h2>
                 <p>Маркетинг</p>
               </div>
             </li>
-            <li class="experience">
-                <div class="experience-relative">
+            <li class="experience__list">
+                <div class="experience__group">
                 <div class="overlay-prtfl">
                   <p>
                     Технокряк это современная площадка распространения
@@ -182,21 +180,21 @@
                     цифрового шпионажа и атак на защищённые сервера конкурентов.
                   </p>
                 </div
-              <a href="link-port"></a>
+              <a href=""></a>
               <img
-                class="image"
+                class="experience__image"
                 src="./image-prtfl/5img.jpg"
                 alt="boxes"
                 width="370"
               />
               </div>
-              <div class="experience-border">
+              <div class="description">
                 <h2>Проект Boxes</h2>
                 <p>Приложение</p>
               </div>
             </li>
-            <li class="experience">
-                <div class="experience-relative">
+            <li class="experience__list">
+                <div class="experience__group">
                 <div class="overlay-prtfl">
                   <p>
                     Технокряк это современная площадка распространения
@@ -204,21 +202,21 @@
                     цифрового шпионажа и атак на защищённые сервера конкурентов.
                   </p>
                 </div
-              <a href="link-port"></a>
+              <a href=""></a>
               <img
-                class="image"
+                class="experience__image"
                 src="./image-prtfl/6img.jpg"
                 alt="screen"
                 width="370"
               />
               </div>
-              <div class="experience-border">
+              <div class="description">
                 <h2>Inspiration has no Borders</h2>
                 <p>Веб-сайт</p>
               </div>
             </li>
-            <li class="experience">
-                <div class="experience-relative">
+            <li class="experience__list">
+                <div class="experience__group">
                 <div class="overlay-prtfl">
                   <p>
                     Технокряк это современная площадка распространения
@@ -226,21 +224,21 @@
                     цифрового шпионажа и атак на защищённые сервера конкурентов.
                   </p>
                 </div
-              <a href="link-port"></a>
+              <a href=""></a>
               <img
-                class="image"
+                class="experience__image"
                 src="./image-prtfl/7img.jpg"
                 alt="magazine"
                 width="370"
               />
               </div>
-              <div class="experience-border">
+              <div class="description">
                 <h2>Издание Limited Edition</h2>
                 <p>Дизайн</p>
               </div>
             </li>
-            <li class="experience">
-                <div class="experience-relative">
+            <li class="experience__list">
+                <div class="experience__group">
                 <div class="overlay-prtfl">
                   <p>
                     Технокряк это современная площадка распространения
@@ -248,21 +246,21 @@
                     цифрового шпионажа и атак на защищённые сервера конкурентов.
                   </p>
                 </div
-              <a href="link-port"></a>
+              <a href=""></a>
               <img
-                class="image"
+                class="experience__image"
                 src="./image-prtfl/8img.jpg"
                 alt="label"
                 width="370"
               />
               </div>
-              <div class="experience-border">
+              <div class="description">
                 <h2>Проект LAB</h2>
                 <p>Маркетинг</p>
               </div>
             </li>
-            <li class="experience">
-                <div class="experience-relative">
+            <li class="experience__list">
+                <div class="experience__group">
                 <div class="overlay-prtfl">
                   <p>
                     Технокряк это современная площадка распространения
@@ -270,15 +268,15 @@
                     цифрового шпионажа и атак на защищённые сервера конкурентов.
                   </p>
                 </div
-              <a href="link-port"></a>
+              <a href=""></a>
               <img
-                class="image"
+                class="experience__image"
                 src="./image-prtfl/9img.jpg"
                 alt="laptop"
                 width="370"
               />
               </div>
-              <div class="experience-border">
+              <div class="description">
                 <h2>Growing Business</h2>
                 <p>Приложение</p>
               </div>
@@ -287,73 +285,73 @@
         </div>
       </section>
     </main>
-    <footer>
-      <!--copyrihgting-->
-      <div class="container adress-footer">
-        <div>
-          <a class="link logo" href="./portfolio.html">
-            <span class="web">Web</span><span class="studio">Studio</span></a
+         <!--copyrihgting-->
+      <footer>
+      <div class="container footer">
+        <div class="">
+          <a class="link logo" href="./index.html">
+            <span class="logo__accent">Web</span
+            ><span class="logo logo--studio">Studio</span></a
           >
           <address id="contacts">
-            <p class="address">г. Киев, пр-т Леси Украинки, 26</p>
+            <p class="footer__address">г. Киев, пр-т Леси Украинки, 26</p>
             <ul>
               <li>
-                <a href="mailto:info@example.com" class="link-footer"
+                <a href="mailto:info@example.com" class="footer__link"
                   >info@example.com</a
                 >
               </li>
               <li>
-                <a href="tel:+380991111111" class="link-footer"
+                <a href="tel:+380991111111" class="footer__link"
                   >+38 099 111 11 11</a
                 >
               </li>
             </ul>
           </address>
         </div>
-
-        <div class="footer-join">
-          <h3 class="join">присоединяйтесь</h3>
-          <ul class="join-part">
-            <li class="join-flex">
-              <a href="" class="icons-link-footer">
-                <svg class="icons-footer">
+        <div class="join">
+          <h3 class="join__title">присоединяйтесь</h3>
+          <ul class="join__list">
+            <li class="join__item">
+              <a href="" class="join__link">
+                <svg class="join__icons">
                   <use href="./icons/sprite.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
-            <li class="join-flex">
-              <a href="" class="icons-link-footer">
-                <svg class="icons-footer">
+            <li class="join__item">
+              <a href="" class="join__link">
+                <svg class="join__icons">
                   <use href="./icons/sprite.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
-            <li class="join-flex">
-              <a href="" class="icons-link-footer">
-                <svg class="icons-footer">
+            <li class="join__item">
+              <a href="" class="join__link">
+                <svg class="join__icons">
                   <use href="./icons/sprite.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="join-flex">
-              <a href="" class="icons-link-footer">
-                <svg class="icons-footer">
+            <li class="join__item">
+              <a href="" class="join__link">
+                <svg class="join__icons">
                   <use href="./icons/sprite.svg#icon-linkedin"></use>
                 </svg>
               </a>
             </li>
           </ul>
         </div>
-          <div class="subscribe">
-          <h3 class="join subscribe-title">Подпишитесь на рассылку</h3>
-          <form class="footer-form">
-            <label class="footer-label"
+        <div class="sbscrb">
+          <h3 class="sbscrb__title">Подпишитесь на рассылку</h3>
+          <form class="sbscrb__form">
+            <label class="sbscrb__label"
               ><input type="email" name="email-footer" placeholder="E-mail"
             /></label>
 
-            <button type="submit" class="subscribe-button">
+            <button type="submit" class="sbscrb__button">
               Подписаться
-              <svg class="icon-footer" width="24" height="24">
+              <svg class="sbscrb__icon" width="24" height="24">
                 <use href="./icons/sprite.svg#icon-icon-send"></use>
               </svg>
             </button>
@@ -361,5 +359,5 @@
         </div>
       </div>
     </footer>
-  </body>
+      </body>
 </html>

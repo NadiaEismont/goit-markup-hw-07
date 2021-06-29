@@ -1,0 +1,71 @@
+.button {
+  display: inline-block;
+  color: var(--white);
+  background-color: var(--button-color);
+  font-size: 16px;
+  line-height: 1.88;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  padding: 10px 32px;
+
+  font-family: inherit;
+  cursor: pointer;
+  border-radius: 4px;
+  border-color: transparent;
+}
+.button:hover,
+.button:focus {
+  background-color: var(--accent-color);
+}
+.button-port {
+  display: inline-block;
+  color: var(--title-text-color);
+  background-color: var(--button-portfolio);
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  padding: 10px 32px;
+  font-family: inherit;
+  cursor: pointer;
+  border-radius: 4px;
+  height: 38px;
+  min-width: 73px;
+  left: 495px;
+  padding: 6px 22px;
+
+  border-color: transparent;
+  transition-property: box-shadow, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button-port:hover,
+.button-port:focus {
+  background-color: var(--accent-color);
+  color: var(--white);
+}
+.button-port:hover,
+.button-port:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.sbscrb__button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 50px;
+  background: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  color: var(--white);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  border-color: transparent;
+  fill: currentColor;
+  margin-right: 10px;
+}
