@@ -5,7 +5,6 @@
   --contacts-color: #ffffff99;
   --white: #ffffff;
   --background-color: #ffffff;
-  --button-color: #188ce8;
   --black-accent: #2f303a;
   --icon-color: #afb1b8;
   --button-portfolio: #f5f4fa;
@@ -22,6 +21,17 @@
   overflow: hidden;
   border: 0;
   clip: rect(0 0 0 0);
+}
+
+.hidden-title {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 html {
@@ -263,7 +273,7 @@ footer {
   fill: var(--accent-color);
 }
 
-.form__field:hover .form__icon {
+.form__field:focus-within:hover .form__icon {
   fill: var(--accent-color);
   opacity: 1;
 }
@@ -401,9 +411,6 @@ textarea:hover {
   transition-property: fill, border;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.icons__svg {
   fill: var(--icon-color);
   width: 20px;
   height: 20px;
@@ -414,6 +421,11 @@ textarea:hover {
   border-radius: 50%;
 }
 
+.icons__item:hover:hover .icons__svg,
+.icons__item:hover:focus .icons__svg {
+  fill: var(--white);
+}
+
 .icons__link:focus {
   outline: none;
   fill: var(--white);
@@ -421,12 +433,7 @@ textarea:hover {
   border-radius: 50%;
 }
 
-.icons__link:focus .icons__svg {
-  fill: var(--white);
-}
-
-.icons__item:hover .icons__svg,
-.icons__item:focus .icons__svg {
+.icons__link:focus:focus .icons__svg {
   fill: var(--white);
 }
 
@@ -510,7 +517,7 @@ textarea:hover {
   justify-content: center;
   width: 200px;
   height: 50px;
-  background-color: var(--button-color);
+  background-color: #188ce8;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   color: var(--white);
@@ -524,7 +531,7 @@ textarea:hover {
 }
 
 .sbscrb__button:hover, .sbscrb__button:focus {
-  background-color: var(--accent-color);
+  background-color: #2196f3;
 }
 
 /* navigation */
@@ -959,25 +966,6 @@ textarea:hover {
   padding-bottom: 20px;
 }
 
-.sbscrb__button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 200px;
-  height: 50px;
-  background: var(--accent-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  color: var(--white);
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.06em;
-  border-color: transparent;
-  fill: currentColor;
-  margin-right: 10px;
-}
-
 .sbscrb__icon {
   bottom: -1;
   margin-left: 10px;
@@ -1005,4 +993,20 @@ textarea:hover {
 /* .profile-block:hover::before {
   border: 1px solid var(--accent-color);
 } */
+.nav-portfolio {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.nav-portfolio .nav-portfolio__list + .nav-portfolio__list {
+  margin-left: 8px;
+}
+
+.nav-portfolio__list {
+  display: inline-block;
+  justify-content: space-evenly;
+}
 /*# sourceMappingURL=main.css.map */

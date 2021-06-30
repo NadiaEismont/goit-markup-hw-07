@@ -36,22 +36,6 @@
 
 /* Portfolio part */
 
-.portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-.nav-portfolio {
-  display: flex;
-  list-style: none;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-bottom: 50px;
-}
-
-.nav-portfolio .nav-portfolio__list + .nav-portfolio__list {
-  margin-left: 8px;
-}
-
 .description > h2 {
   font-weight: 700;
   font-size: 18px;
@@ -78,16 +62,7 @@
 /* .link-port {
   display: inline-block;
 } */
-.hidden-title {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
+
 .experience {
   padding: 0;
   margin: 0;
