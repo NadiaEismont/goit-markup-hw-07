@@ -4,7 +4,7 @@
   font-weight: bold;
   font-size: 26px;
   line-height: 1.19;
-  color: var(--titles-text);
+  color: $titles-text;
   letter-spacing: 0.03em;
   margin: auto 0;
 
@@ -19,6 +19,6 @@
     letter-spacing: 0.03em;
   }
   &--studio {
-    color: var(--white);
+    color: $white;
   }
 }

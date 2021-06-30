@@ -21,26 +21,26 @@
     transition-property: fill, border;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    fill: var(--icon-color);
+    fill: $icon-color;
     width: 20px;
     height: 20px;
   }
 }
 
 .icons__item:hover {
-  background-color: var(--accent-color);
+  background-color: $accent-color;
   border-radius: 50%;
   &:hover .icons__svg,
   &:focus .icons__svg {
-    fill: var(--white);
+    fill: $white;
   }
 }
 .icons__link:focus {
   outline: none;
-  fill: var(--white);
-  background-color: var(--accent-color);
+  fill: $white;
+  background-color: $accent-color;
   border-radius: 50%;
   &:focus .icons__svg {
-    fill: var(--white);
+    fill: $white;
   }
 }

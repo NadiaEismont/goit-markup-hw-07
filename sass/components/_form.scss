@@ -27,27 +27,25 @@
     font-size: 12px;
     line-height: 1.16;
     letter-spacing: 0.01em;
-    color: var(--primary-text-color);
+    color: $primary-text-color;
     margin-bottom: 4px;
   }
 }
 
+.form__input:hover {
+  border: 1px solid $accent-color;
+}
 .form__input:focus {
-  border-color: var(--accent-color);
-  &:hover {
-    border: 1px solid var(--accent-color);
-  }
-  &:focus {
-    border: 1px solid var(--accent-color);
-  }
+  border: 1px solid $accent-color;
 }
 
 .form__field:focus-within {
-  fill: var(--accent-color);
-  &:hover .form__icon {
-    fill: var(--accent-color);
-    opacity: 1;
-  }
+  fill: $accent-color;
+}
+
+.form__field:hover .form__icon {
+  fill: $accent-color;
+  opacity: 1;
 }
 
 /* .current:hover::after,
@@ -69,16 +67,16 @@
   letter-spacing: 0.03em;
   margin-bottom: 12px;
 
-  color: var(--title-text-color);
+  color: $title-text-color;
 }
 .form__field textarea {
   resize: none;
 }
 textarea:focus {
-  outline: 1px solid var(--accent-color);
+  outline: 1px solid $accent-color;
 }
 textarea:hover {
-  border: 1px solid var(--accent-color);
+  border: 1px solid $accent-color;
 }
 .form__field__form__input {
   width: 100%;
@@ -109,14 +107,14 @@ textarea:hover {
   height: 15px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-  border: 2px solid var(--title-text-color);
+  border: 2px solid $title-text-color;
   display: inline-block;
   vertical-align: middle;
   margin-right: 9px;
 }
 .form__policy:checked + .form__check::before {
   content: "";
-  background-color: var(--accent-color);
+  background-color: $accent-color;
   background-image: url(../icons/check.svg);
   vertical-align: middle;
   border-color: transparent;
@@ -126,7 +124,7 @@ textarea:hover {
 .form__check:hover::before,
 .form__check:focus::before {
   border-radius: 4px;
-  border-color: var(--accent-color);
+  border-color: $accent-color;
 }
 
 .form__contract {
@@ -134,7 +132,7 @@ textarea:hover {
   line-height: 1.71;
   letter-spacing: 0.03em;
 
-  color: var(--accent-color);
+  color: $accent-color;
   text-decoration: underline;
 }
 .button-form {
@@ -148,8 +146,8 @@ textarea:hover {
   margin-right: auto;
   margin-left: auto;
 
-  background-color: var(--accent-color);
-  color: var(--white);
+  background-color: $accent-color;
+  color: $white;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border-color: transparent;

@@ -15,7 +15,7 @@ ul {
   margin: 0;
 }
 a {
-  color: var(--title-text-color);
+  color: $title-text-color;
   text-decoration: none;
 }
 h1,
@@ -28,7 +28,7 @@ p {
 }
 
 body {
-  background-color: var(--background-color);
+  background-color: $background-color;
   font-family: "Roboto", sans-serif;
   letter-spacing: 0.03em;
   font-style: normal;
@@ -40,15 +40,15 @@ img {
   height: auto;
 }
 header {
-  background: var(--white);
+  background: $white;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
-  color: var(--titles-text);
+  color: $titles-text;
   border-bottom: 1px solid #ececec;
 }
 footer {
-  background: var(--black-accent);
+  background: $black-accent;
   margin: 0 auto;
   padding-top: 60px;
   padding-bottom: 60px;

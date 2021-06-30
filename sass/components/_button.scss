@@ -1,7 +1,7 @@
 .button {
   display: inline-block;
-  color: var(--white);
-  background-color: var(--button-color);
+  color: $white;
+  background-color: $button-color;
   font-size: 16px;
   line-height: 1.88;
   font-weight: 700;
@@ -15,14 +15,14 @@
 
   &:hover,
   &:focus {
-    background-color: var(--accent-color);
+    background-color: $accent-color;
   }
 }
 
 .button-port {
   display: inline-block;
-  color: var(--title-text-color);
-  background-color: var(--button-portfolio);
+  color: $title-text-color;
+  background-color: $button-portfolio;
 
   font-weight: 500;
   font-size: 16px;
@@ -45,10 +45,9 @@
 
   &:hover,
   &:focus {
-    background-color: var(--accent-color);
-    color: var(--white);
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-      1px 4px 6px rgba(0, 0, 0, 0.16);
+    background-color: $accent-color;
+    color: $white;
+    box-shadow: $button-shadow;
   }
 }
 .sbscrb__button {
@@ -57,10 +56,10 @@
   justify-content: center;
   width: 200px;
   height: 50px;
-  background-color: #188ce8;
+  background-color: $button-color;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  color: var(--white);
+  color: $white;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -70,6 +69,6 @@
   margin-right: 10px;
   &:hover,
   &:focus {
-    background-color: #2196f3;
+    background-color: $accent-color;
   }
 }

@@ -34,7 +34,7 @@
   margin-right: 50px;
 }
 .nav__list .current {
-  color: var(--accent-color);
+  color: $accent-color;
 }
 
 .connection {
@@ -48,7 +48,7 @@
   margin-left: auto;
 
   &__link {
-    color: var(--primary-text-color);
+    color: $primary-text-color;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -81,7 +81,7 @@
   height: 4px;
   bottom: 0;
   left: 0;
-  background: var(--accent-color);
+  background: $accent-color;
   transition: width 0.3s ease-in-out;
   margin-top: 28px;
   border-radius: 2px;

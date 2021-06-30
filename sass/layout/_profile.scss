@@ -8,7 +8,7 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
-    color: var(--title-text-color);
+    color: $title-text-color;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     margin-bottom: 10px;
@@ -19,7 +19,7 @@
     font-weight: normal;
     font-size: 14px;
     line-height: 1.71;
-    color: var(--primary-text-color);
+    color: $primary-text-color;
   }
   &__block:not(:last-child) {
     margin-right: 30px;

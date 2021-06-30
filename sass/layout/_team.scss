@@ -11,13 +11,13 @@
     padding-bottom: 10px;
     font-size: 16px;
     line-height: 1.19;
-    color: var(--title-text-color);
+    color: $title-text-color;
     font-weight: 500;
   }
   &__prof {
     font-size: 16px;
     line-height: 1.19;
-    color: var(--primary-text-color);
+    color: $primary-text-color;
   }
   &__description {
     text-align: center;
@@ -27,8 +27,8 @@
 
 .team > .team__description {
   flex-basis: calc((100% - 120px) / 4);
-  background: var(--white);
-  box-shadow: var(--button-shadow);
+  background: $white;
+  box-shadow: $button-shadow;
   border-radius: 4px;
 }
 
