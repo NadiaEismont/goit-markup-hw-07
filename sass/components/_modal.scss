@@ -65,9 +65,11 @@
   width: 11px;
   height: 11px;
 }
-.button-modal-close:hover,
-.button-modal-close:focus {
-  color: $accent-color;
-  cursor: pointer;
-  border: 1px solid $accent-color;
+.button-modal-close {
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    cursor: pointer;
+    border: 1px solid $accent-color;
+  }
 }

@@ -25,16 +25,20 @@
   }
 }
 
-.team > .team__description {
-  flex-basis: calc((100% - 120px) / 4);
-  background: $white;
-  box-shadow: $button-shadow;
-  border-radius: 4px;
+.team > {
+  .team__description {
+    flex-basis: calc((100% - 120px) / 4);
+    background: $white;
+    box-shadow: $button-shadow;
+    border-radius: 4px;
+  }
 }
 
-.team > .team__description {
-  margin-left: 30px;
-  align-items: center;
+.team > {
+  .team__description {
+    margin-left: 30px;
+    align-items: center;
+  }
 }
 .team__description:nth-child(1) {
   margin-left: 0;
