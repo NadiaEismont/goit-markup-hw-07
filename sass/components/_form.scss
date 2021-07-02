@@ -82,7 +82,7 @@
   color: $title-text-color;
 }
 .form__field {
-  & textarea {
+  textarea {
     resize: none;
   }
 }
