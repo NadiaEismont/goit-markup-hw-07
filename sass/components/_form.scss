@@ -168,9 +168,13 @@ textarea {
   margin-right: auto;
   margin-left: auto;
 
-  background-color: $accent-color;
+  background-color: $button-color;
   color: $white;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border-color: transparent;
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
 }
